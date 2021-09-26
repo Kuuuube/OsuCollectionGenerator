@@ -58,8 +58,12 @@ public class Stream {
 
     public enum StreamType {
         THIRD,
+        FOURTH,
+        FIFTH,
         SIXTH,
+        SEVENTH,
         EIGHTH,
+        NINTH,
         TWELFTH,
         SIXTEENTH,
         NON_COMPLEX

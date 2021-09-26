@@ -270,7 +270,7 @@ public class Main {
         userVariables.put(BPM_CHANGE_THRESHOLD, new UserVariable(
                 BPM_CHANGE_THRESHOLD,
                 20,
-                "<html>[Integer] Sum of the length of all non 1/3, 1/4, 1/6, 1/8, 1/12, 1/16 streams " +
+                "<html>[Integer] Sum of the length of all non 1/3, 1/4, 1/5, 1/6, 1/7, 1/8, 1/9, 1/12, 1/16 streams " +
                 "<br>divided by the sum of the length of all streams times 100%. " +
                 "<br>If that percentage is higher that this variable, a stream map is considered as having bpm changes. " +
                 "<br>If it is, the streamPercentage AND streamLength is within the specified threshold " +
@@ -339,6 +339,20 @@ public class Main {
                 orderInUi++,
                 true));
 
+        userVariables.put(WEIGHT_4, new UserVariable(
+                WEIGHT_4,
+                0,
+                "[Double] Weight for a 1/4 stream when calculating if the map has a complex rhythm.",
+                orderInUi++,
+                true));
+
+        userVariables.put(WEIGHT_5, new UserVariable(
+                WEIGHT_5,
+                2,
+                "[Double] Weight for a 1/5 stream when calculating if the map has a complex rhythm.",
+                orderInUi++,
+                true));
+
         userVariables.put(WEIGHT_6, new UserVariable(
                 WEIGHT_6,
                 1,
@@ -346,10 +360,24 @@ public class Main {
                 orderInUi++,
                 true));
 
+        userVariables.put(WEIGHT_7, new UserVariable(
+                WEIGHT_7,
+                2,
+                "[Double] Weight for a 1/7 stream when calculating if the map has a complex rhythm.",
+                orderInUi++,
+                true));
+
         userVariables.put(WEIGHT_8, new UserVariable(
                 WEIGHT_8,
                 2,
                 "[Double] Weight for a 1/8 stream when calculating if the map has a complex rhythm.",
+                orderInUi++,
+                true));
+
+        userVariables.put(WEIGHT_9, new UserVariable(
+                WEIGHT_9,
+                3,
+                "[Double] Weight for a 1/9 stream when calculating if the map has a complex rhythm.",
                 orderInUi++,
                 true));
 

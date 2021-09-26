@@ -195,18 +195,42 @@ public class Analyzer {
                 int count = complexMap.getOrDefault(key, 0);
                 complexMap.put(key, count + stream.getTotalHitObjects());
                 complexPercentage += Main.userVariables.get(WEIGHT_3).value * stream.getTotalHitObjects() / totalStreamHitObjects;
+            } else if (checkIfInRange(stream.getBpm(), stream.getBaseBpm() * 4 / 4.0)) {
+                stream.setStreamType(Stream.StreamType.FOURTH);
+                int key = (int) (stream.getBaseBpm() * 4 / 4.0);
+                int count = complexMap.getOrDefault(key, 0);
+                complexMap.put(key, count + stream.getTotalHitObjects());
+                complexPercentage += Main.userVariables.get(WEIGHT_4).value * stream.getTotalHitObjects() / totalStreamHitObjects;
+            } else if (checkIfInRange(stream.getBpm(), stream.getBaseBpm() * 5 / 4.0)) {
+                stream.setStreamType(Stream.StreamType.FIFTH);
+                int key = (int) (stream.getBaseBpm() * 5 / 4.0);
+                int count = complexMap.getOrDefault(key, 0);
+                complexMap.put(key, count + stream.getTotalHitObjects());
+                complexPercentage += Main.userVariables.get(WEIGHT_5).value * stream.getTotalHitObjects() / totalStreamHitObjects;
             } else if (checkIfInRange(stream.getBpm(), stream.getBaseBpm() * 6 / 4.0)) {
                 stream.setStreamType(Stream.StreamType.SIXTH);
                 int key = (int) (stream.getBaseBpm() * 6 / 4.0);
                 int count = complexMap.getOrDefault(key, 0);
                 complexMap.put(key, count + stream.getTotalHitObjects());
                 complexPercentage += Main.userVariables.get(WEIGHT_6).value * stream.getTotalHitObjects() / totalStreamHitObjects;
+            } else if (checkIfInRange(stream.getBpm(), stream.getBaseBpm() * 7 / 4.0)) {
+                stream.setStreamType(Stream.StreamType.SEVENTH);
+                int key = (int) (stream.getBaseBpm() * 7 / 4.0);
+                int count = complexMap.getOrDefault(key, 0);
+                complexMap.put(key, count + stream.getTotalHitObjects());
+                complexPercentage += Main.userVariables.get(WEIGHT_7).value * stream.getTotalHitObjects() / totalStreamHitObjects;
             } else if (checkIfInRange(stream.getBpm(), stream.getBaseBpm() * 8 / 4.0)) {
                 stream.setStreamType(Stream.StreamType.EIGHTH);
                 int key = (int) (stream.getBaseBpm() * 8 / 4.0);
                 int count = complexMap.getOrDefault(key, 0);
                 complexMap.put(key, count + stream.getTotalHitObjects());
                 complexPercentage += Main.userVariables.get(WEIGHT_8).value * stream.getTotalHitObjects() / totalStreamHitObjects;
+            } else if (checkIfInRange(stream.getBpm(), stream.getBaseBpm() * 9 / 4.0)) {
+                stream.setStreamType(Stream.StreamType.NINTH);
+                int key = (int) (stream.getBaseBpm() * 9 / 4.0);
+                int count = complexMap.getOrDefault(key, 0);
+                complexMap.put(key, count + stream.getTotalHitObjects());
+                complexPercentage += Main.userVariables.get(WEIGHT_9).value * stream.getTotalHitObjects() / totalStreamHitObjects;
             } else if (checkIfInRange(stream.getBpm(), stream.getBaseBpm() * 12 / 4.0)) {
                 stream.setStreamType(Stream.StreamType.TWELFTH);
                 int key = (int) (stream.getBaseBpm() * 12 / 4.0);

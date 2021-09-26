@@ -13,8 +13,12 @@ public class UserVariable {
     public final static String PRINT_STREAMS = "printStreams";
     public final static String PRINT_STREAM_THRESHOLD = "printStreamThreshold";
     public final static String WEIGHT_3 = "weight3";
+    public final static String WEIGHT_4 = "weight4";
+    public final static String WEIGHT_5 = "weight5";
     public final static String WEIGHT_6 = "weight6";
+    public final static String WEIGHT_7 = "weight7";
     public final static String WEIGHT_8 = "weight8";
+    public final static String WEIGHT_9 = "weight9";
     public final static String WEIGHT_12 = "weight12";
     public final static String WEIGHT_16 = "weight16";
     public final static String BROADEN_SEARCH = "broadenSearch";

@@ -8,7 +8,6 @@
     <artifactId>OsuCollectionGenerator</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-	
     <dependencies>
         <dependency>
             <groupId>com.formdev</groupId>
@@ -16,7 +15,6 @@
             <version>1.2</version>
         </dependency>
     </dependencies>
-	
     <build>
         <plugins>
             <plugin>
@@ -28,19 +26,20 @@
                     <target>8</target>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.1.0</version>
-                <configuration>
-                <archive>
-                    <manifest>
-                        <addClasspath>true</addClasspath>
-                        <mainClass>com.luzianu.Main</mainClass>
-                    </manifest>
-                </archive>
-                </configuration>
-            </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.1.0</version>
+				<configuration>
+				<archive>
+					<manifest>
+						<addClasspath>true</addClasspath>
+						<classpathPrefix>lib/</classpathPrefix>
+						<mainClass>com.luzianu.Main</mainClass>
+					</manifest>
+				</archive>
+				</configuration>
+			</plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
