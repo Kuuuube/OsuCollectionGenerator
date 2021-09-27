@@ -249,7 +249,7 @@ public class UserInterface {
                     else
                         textField.setText(String.valueOf((int) userVariable.value));
                     JPanel panel = new JPanel(new BorderLayout());
-                    JLabel label = new JLabel("❔ " + userVariable.name + ": ");
+                    JLabel label = new JLabel("? " + userVariable.name + ": ");
                     panel.setBorder(BorderFactory.createEmptyBorder(0, 5, 0, 5));
                     label.setToolTipText(userVariable.description);
                     panel.add(label, BorderLayout.LINE_START);

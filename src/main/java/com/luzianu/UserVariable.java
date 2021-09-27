@@ -12,6 +12,13 @@ public class UserVariable {
     public final static String MAX_STREAM_LENGTH_ALL = "maxStreamLengthAll";
     public final static String PRINT_STREAMS = "printStreams";
     public final static String PRINT_STREAM_THRESHOLD = "printStreamThreshold";
+    public final static String CUSTOM_COMPLEX = "customComplex";
+    public final static String WEIGHT_CUSTOM = "weightCustom";
+    public final static String CUSTOM_COMPLEX_MIN = "customComplexMin";
+    public final static String CUSTOM_COMPLEX_MAX = "customComplexMax";
+    public final static String WEIGHT_1 = "weight1";
+    public final static String WEIGHT_1_5 = "weight1.5";
+    public final static String WEIGHT_2 = "weight2";
     public final static String WEIGHT_3 = "weight3";
     public final static String WEIGHT_4 = "weight4";
     public final static String WEIGHT_5 = "weight5";

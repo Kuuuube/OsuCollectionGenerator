@@ -332,6 +332,55 @@ public class Main {
                 orderInUi++,
                 false));
 
+        userVariables.put(CUSTOM_COMPLEX, new UserVariable(
+                CUSTOM_COMPLEX,
+                0,
+                "[Double] Timing for a 1/x stream when calculating if the map has a complex rhythm.",
+                orderInUi++,
+                true));
+
+        userVariables.put(WEIGHT_CUSTOM, new UserVariable(
+                WEIGHT_CUSTOM,
+                0,
+                "[Double] Weight for a 1/x stream when calculating if the map has a complex rhythm.",
+                orderInUi++,
+                true));
+
+        userVariables.put(CUSTOM_COMPLEX_MIN, new UserVariable(
+                CUSTOM_COMPLEX_MIN,
+                0,
+                "[Double] Only classify a possible complex map as one if x percent is above customComplexMin.",
+                orderInUi++,
+                true));
+
+        userVariables.put(CUSTOM_COMPLEX_MAX, new UserVariable(
+                CUSTOM_COMPLEX_MAX,
+                100,
+                "[Double] Only classify a possible complex map as one if x percent is below customComplexMax.",
+                orderInUi++,
+                true));
+
+        userVariables.put(WEIGHT_1, new UserVariable(
+                WEIGHT_1,
+                0,
+                "[Double] Weight for a 1/1 stream when calculating if the map has a complex rhythm.",
+                orderInUi++,
+                true));
+
+        userVariables.put(WEIGHT_1_5, new UserVariable(
+                WEIGHT_1_5,
+                0,
+                "[Double] Weight for a 1/1.5 stream when calculating if the map has a complex rhythm.",
+                orderInUi++,
+                true));
+
+        userVariables.put(WEIGHT_2, new UserVariable(
+                WEIGHT_2,
+                0,
+                "[Double] Weight for a 1/2 stream when calculating if the map has a complex rhythm.",
+                orderInUi++,
+                true));
+
         userVariables.put(WEIGHT_3, new UserVariable(
                 WEIGHT_3,
                 1,

@@ -57,6 +57,10 @@ public class Stream {
     }
 
     public enum StreamType {
+        CUSTOM_COMPLEX,
+        ONE,
+        ONEHALF,
+        SECOND,
         THIRD,
         FOURTH,
         FIFTH,
